@@ -1,0 +1,18 @@
+stages:
+  - build_lint
+
+before_script:
+  - export LANG=en_US.UTF-8
+  - export LANGUAGE=en_US:en
+  - export LC_ALL=en_US.UTF-8
+  - export PATH=$PATH:/usr/local/bin/
+
+build_project:
+  stage: build_lint
+  coverage: '/`\d+(?:\.\d*)?\%`$/'
+  script:
+    - rm -rf lint.rb
+    - git archive --remote=git@git.in.zhihu.com:Team-iOS-Platform/arsenal.git HEAD lint.rb | tar xvf -
+    - ruby lint.rb
+  tags:
+    - Team-iOS-Platform

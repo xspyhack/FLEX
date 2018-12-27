@@ -1,0 +1,27 @@
+PODS:
+  - FLEX (0.1.0)
+  - Nimble (7.3.1)
+  - Quick (1.3.0)
+
+DEPENDENCIES:
+  - FLEX (from `../`)
+  - Nimble (= 7.3.1)
+  - Quick (= 1.3.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  FLEX:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FLEX: 4a64e702e0e266ac829f3146fd2414f0ce88f791
+  Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
+  Quick: 03278013f71aa05fe9ecabc94fbcc6835f1ee76f
+
+PODFILE CHECKSUM: ed8556a7a22792c491c6e71d0fbed3385e6a1dcf
+
+COCOAPODS: 1.5.3
